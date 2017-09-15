@@ -1,0 +1,9 @@
+Honggang,
+
+Attached is information that you will require to develop the ¡®Corn K Calculator¡¯.
+
+It would use cost of K2O and corn price, and whether the field fell into the low smectite/illite ratio or high, and the soil test to determine rate.
+
+There probably should also be a chart that converts tonnage price of 0-0-60 K fertilizer to price K2O.
+
+We can visit about it when you get a chance.
