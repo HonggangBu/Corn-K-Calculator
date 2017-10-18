@@ -1,0 +1,163 @@
+* {
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
+body {
+    -webkit-touch-callout: none;
+    -webkit-text-size-adjust: none;
+    -webkit-user-select: none;
+    background-color: #E4E4E4;
+    background-image: linear-gradient(top, #A7A7A7 0%, #E4E4E4 51%);
+    background-image: -webkit-linear-gradient(top, #A7A7A7 0%, #E4E4E4 51%);
+    background-image: -ms-linear-gradient(top, #A7A7A7 0%, #E4E4E4 51%);
+    background-image: -webkit-gradient( linear, left top, left bottom, color-stop(0, #A7A7A7), color-stop(0.51, #E4E4E4) );
+    background-attachment: fixed;
+    font-family: 'HelveticaNeue-Light', 'HelveticaNeue', Helvetica, Arial, sans-serif;
+    font-size: 12px;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    background-color: #32383d;
+    font-family: 'RobotoRegular', 'Droid Sans', 'Segoe UI', Segoe, 'San Francisco', 'Helvetica Neue', Helvetica, Arial, Geneva, sans-serif;
+    font-size: 12px;
+}
+
+
+
+footer {
+    text-align: center;
+    background-color: gainsboro !important;
+    font-size: xx-small;
+}
+
+.nav-tabs {
+    text-align: center;
+}
+
+    .nav-tabs > li {
+        float: none;
+        display: inline-block;
+        zoom: 1;
+    }
+
+        .nav-tabs > li > a {
+            color: black !important;
+            font-size: medium;
+            margin: 0 2px !important;
+        }
+
+        .nav-tabs > li.active {
+            font-size: large;
+            font-weight: bold;
+            background-color: chartreuse !important;
+        }
+
+.photocss {
+    height: 120px;
+}
+
+#FranzenName {
+    font-weight: bold;
+    font-size: large;
+    color: navy;
+}
+
+hr {
+    border: 0;
+    clear: both;
+    display: block;
+    width: 96%;
+    background-color: brown;
+    height: 1px;
+}
+
+#k2oResultSpan {
+    font-size: x-large;
+    font-weight: bold;
+}
+
+/*.wrapper {
+    display: inline-block;
+    position: relative;
+    width: 100% !important;
+}
+
+    .wrapper input {
+        text-align: center !important;
+        font-size: medium !important;
+    }
+
+.clearBtn {
+    opacity: 50 !important;
+    position: absolute !important;
+    top: 0 !important;
+    bottom: 0 !important;
+    background-color: lightgray !important;
+    border: 0 !important;
+    font-size: 10pt !important;
+}
+
+    .clearBtn span {
+        font-weight: 100 !important;
+    }*/
+
+.resultDiv {
+    margin-bottom: 20px;
+    background-color: aliceblue;
+    color: black;
+    font-size: medium;
+    border: solid;
+    border-color: darkgreen;
+    height: 120px;
+    text-align:center;
+}
+
+#contactInfo {
+    font-size: larger;
+    margin-bottom: 70px;
+}
+
+#intro p {
+    font-size: medium !important;
+}
+
+.dynamic-year {
+    font-size: x-small;
+}
+
+.collapseBtn {
+    cursor: pointer;
+    width: 100% !important;
+    font-weight: bold !important;
+    font-size: large !important;
+}
+
+.f1 {
+    font-size: medium;
+    font-weight: bold;
+    font-style: oblique;
+}
+
+.f2 {
+    font-size: medium;
+    font-stretch: extra-expanded;
+    font-weight: bold;
+}
+
+.labelSize{
+    font-size:medium;
+}
+
+.border-top {
+    border-top-style: double;
+    border-top-color: dimgrey;
+    border-top-width: thick;
+}
+
+select option{
+    font-size:medium;
+    font-weight:bold;
+}
+
+
