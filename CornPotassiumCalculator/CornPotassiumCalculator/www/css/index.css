@@ -3,27 +3,16 @@
 }
 
 body {
-    -webkit-touch-callout: none;
-    -webkit-text-size-adjust: none;
-    -webkit-user-select: none;
     background-color: #E4E4E4;
-    background-image: linear-gradient(top, #A7A7A7 0%, #E4E4E4 51%);
-    background-image: -webkit-linear-gradient(top, #A7A7A7 0%, #E4E4E4 51%);
-    background-image: -ms-linear-gradient(top, #A7A7A7 0%, #E4E4E4 51%);
-    background-image: -webkit-gradient( linear, left top, left bottom, color-stop(0, #A7A7A7), color-stop(0.51, #E4E4E4) );
-    background-attachment: fixed;
     font-family: 'HelveticaNeue-Light', 'HelveticaNeue', Helvetica, Arial, sans-serif;
     font-size: 12px;
     height: 100%;
     margin: 0px;
     padding: 0px;
     width: 100%;
-    background-color: #32383d;
     font-family: 'RobotoRegular', 'Droid Sans', 'Segoe UI', Segoe, 'San Francisco', 'Helvetica Neue', Helvetica, Arial, Geneva, sans-serif;
     font-size: 12px;
 }
-
-
 
 footer {
     text-align: center;
@@ -77,33 +66,8 @@ hr {
     font-weight: bold;
 }
 
-/*.wrapper {
-    display: inline-block;
-    position: relative;
-    width: 100% !important;
-}
-
-    .wrapper input {
-        text-align: center !important;
-        font-size: medium !important;
-    }
-
-.clearBtn {
-    opacity: 50 !important;
-    position: absolute !important;
-    top: 0 !important;
-    bottom: 0 !important;
-    background-color: lightgray !important;
-    border: 0 !important;
-    font-size: 10pt !important;
-}
-
-    .clearBtn span {
-        font-weight: 100 !important;
-    }*/
-
 .resultDiv {
-    margin-bottom: 20px;
+    margin-bottom: 70px;
     background-color: aliceblue;
     color: black;
     font-size: medium;
@@ -111,11 +75,6 @@ hr {
     border-color: darkgreen;
     height: 120px;
     text-align:center;
-}
-
-#contactInfo {
-    font-size: larger;
-    margin-bottom: 70px;
 }
 
 #intro p {
@@ -160,4 +119,7 @@ select option{
     font-weight:bold;
 }
 
-
+#contactDiv{
+    text-align:center; 
+    margin-bottom:40px;
+}
