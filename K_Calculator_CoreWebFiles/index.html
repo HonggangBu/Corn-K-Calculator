@@ -1,0 +1,160 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title></title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="Scripts/Index.js"></script>
+    <link rel="stylesheet" href="Content/IndexCSS.css">
+
+</head>
+<body>
+    <div class="jumbotron">
+        <a href="index.html" style="float:left; margin-left:100px;"><img src="Images/feature_graphic.png" alt="feature graphic" height="128"></a>
+        <h2 style="color:darkslategrey; font-weight:bold; text-align:center;">North Dakota <br /> Corn Potassium Recommendation Calculator</h2>
+    </div>
+    <p></p>
+    <div class="container" style="text-align:center;">
+        <div class="row">
+            <div class="col-sm-5">
+                <h4 style="font-weight:bold; text-align:left;">
+                    Select each parameter value below to conduct corn potassium calculation.
+                    All fields are necessary.
+                </h4>
+
+                <div class="border-top">
+                    <h4>Smectite-to-Illite Ratio</h4>
+                    <div class="radio-inline labelSize">
+                        <label><input type="radio" name="siRatio" value="small" checked>< 3.5</label>
+                    </div>
+                    &nbsp;&nbsp;
+                    <div class="radio-inline labelSize">
+                        <label><input type="radio" name="siRatio" value="big">>= 3.5</label>
+                    </div>
+                </div>
+
+                <div class="border-top">
+                    <h4>Soil Test K Level (unit: ppm)</h4>
+                    <div id="smallKDiv">
+                        <div class="radio-inline labelSize">
+                            <label><input type="radio" name="skLevel" value="small" checked><= 100</label>
+                        </div>
+                        &nbsp;&nbsp;
+                        <div class="radio-inline labelSize">
+                            <label><input type="radio" value="big" name="skLevel">101-149</label>
+                        </div>
+                    </div>
+                    <div id="bigKDiv">
+                        <div class="radio-inline labelSize">
+                            <label><input type="radio" name="bkLevel" value="small" checked><= 150</label>
+                        </div>
+                        &nbsp;&nbsp;
+                        <div class="radio-inline labelSize">
+                            <label><input type="radio" name="bkLevel" value="big">151-199</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group border-top">
+                    <h4>Closest corn price ($/bushel):</h4>
+                    <select class="form-control" id="cornPriceSelect"
+                            style="width:30%; margin-left:35%; font-size:medium; font-weight:bold;">
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                        <option>6</option>
+                        <option>7</option>
+                        <option>8</option>
+                        <option>9</option>
+                        <option>10</option>
+                    </select>
+                </div>
+
+                <div class="form-group border-top">
+                    <h4>Closest K<sub>2</sub>O price ($/pound)<br /> (or 0-0-60 fertilizer price ($/ton)):</h4>
+                    <select class="form-control select-style" id="kPriceSelect"
+                            style="width:30%; margin-left:35%; font-size:medium; font-weight:bold;">
+                        <option>0.125 (150)</option>
+                        <option>0.2 (240)</option>
+                        <option>0.3 (360)</option>
+                        <option>0.4 (480)</option>
+                        <option>0.5 (600)</option>
+                        <option>0.6 (720)</option>
+                        <option>0.7 (840)</option>
+                        <option>0.8 (960)</option>
+                        <option>0.9 (1080)</option>
+                        <option>1.0 (1200)</option>
+                    </select>
+                </div>
+
+                <div class="border-top">
+                    <br /><br />
+                    <div style="float:left;">
+                        <button id="calcBtn" type="button" class="btn btn-primary btn-lg"><span>Calculate</span></button><br />
+                    </div>
+                    <div id="resultDiv" style="font-size: medium; border: solid; border-color: darkgreen;
+                                               height: 70px; text-align:center; margin-left:70px; background-color:brown; color:white;">
+                        <label>Recommended K<sub>2</sub>O (pounds/acre)</label><br />
+                        <span id="k2oResultSpan"></span>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="col-sm-7">
+                <a data-toggle="modal" data-target="#myModal"><img src="images/smectiteIlliteRatio.jpg" alt="Smectite/Illite Ratio" style="width:100%;"></a>
+                <span style="text-align:center !important; font-size:small;">(Click the map to view its bigger size)</span>
+                <p style="font-size:medium; text-align:left; padding-left:10px; padding-right:10px; font-weight:bold;">
+                    Smectite-to-illite ratio of surface soils in North Dakota from a soil sampling conducted in spring 2017.
+                    Dark gray regions are equal to or greater than 3:5. White areas are less than 3:5.
+                </p>
+            </div>
+
+            <div class="modal fade" id="myModal" role="dialog">
+                <div class="modal-dialog modal-lg">
+
+                    <!-- Modal content-->
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            <h4 class="modal-title">North Dakota Smectite-to-Illite Ratio Map</h4>
+                        </div>
+                        <div class="modal-body">
+                            <img src="images/smectiteIlliteRatio.jpg" alt="Smectite/Illite Ratio" style="width:100%;">
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div style="margin-bottom:100px;"></div>
+    </div>
+
+    <footer class="navbar-default navbar-fixed-bottom">
+        <div class="container-fluid">
+            <p>
+                <br />&copy; <span class="dynamic-year"></span>
+                <span id="fd">Department of Soil Science, North Dakota State University.</span><br />
+                <span>
+                    For more information, please check <a href="https://www.ag.ndsu.edu/publications/crops/soil-fertility-recommendations-for-corn#section-2" target="_blank">this</a>
+                    or contact <a href="https://www.ndsu.edu/soils/personnel/faculty/dr_david_franzen/" target="_blank">Dr. Franzen</a>.
+                </span><br />
+                <span id="developer">
+                    Developed by Honggang Bu for
+                    <b><a href="https://www.ndsu.edu/soils/personnel/faculty/dr_david_franzen/" target="_blank">Dr. David Franzen</a></b>,
+                    the Extension Soil Specialist at NDSU.
+                </span>
+            </p>
+        </div>
+    </footer>
+</body>
+</html>
