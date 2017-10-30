@@ -19,12 +19,6 @@ footer {
     font-weight:normal;
 }
 
-#developer{
-    color:brown;
-    font-style:italic;
-    font-size:x-small;
-}
-
 .border-top {
     border-top-style: double;
     border-top-color: dimgrey;
