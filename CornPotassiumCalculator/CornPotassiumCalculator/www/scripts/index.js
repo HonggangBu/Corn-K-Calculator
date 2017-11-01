@@ -91,13 +91,11 @@ sb = [[90, 90, 60, 60, 60, 0, 0, 0, 0, 0],
     function OnCalculateBtnClick() {
         document.getElementById("calcBtn").addEventListener("click", function () {
             var cornPriceIndex = $('#cornPriceSelect').prop('selectedIndex'),
-                kPriceIndex = $('#kPriceSelect').prop('selectedIndex'),
-                x;
+                kPriceIndex = $('#kPriceSelect').prop('selectedIndex');
 
             if ($("input[name='siRatio']:checked").val() === 'small') { // s/i ratio<3/5
                 if ($("input[name='skLevel']:checked").val() === 'small') {
-                    x = ss[cornPriceIndex][kPriceIndex];
-                    $('#k2oResultSpan').text(x);
+                    $('#k2oResultSpan').text(ss[cornPriceIndex][kPriceIndex]);
                 }
                 else if ($("input[name='skLevel']:checked").val() === 'big') {
                     $('#k2oResultSpan').text(sb[cornPriceIndex][kPriceIndex]);
