@@ -93,23 +93,27 @@ sb = [[90, 90, 60, 60, 60, 0, 0, 0, 0, 0],
             var cornPriceIndex = $('#cornPriceSelect').prop('selectedIndex'),
                 kPriceIndex = $('#kPriceSelect').prop('selectedIndex'),
                 x;
-            
+
             if ($("input[name='siRatio']:checked").val() === 'small') { // s/i ratio<3/5
                 if ($("input[name='skLevel']:checked").val() === 'small') {
                     x = ss[cornPriceIndex][kPriceIndex];
                     $('#k2oResultSpan').text(x);
                 }
-                else {
+                else if ($("input[name='skLevel']:checked").val() === 'big') {
                     $('#k2oResultSpan').text(sb[cornPriceIndex][kPriceIndex]);
                 }
+                else
+                    $('#k2oResultSpan').text('0');
             }
             else { // s/i ratio>=3/5
                 if ($("input[name='bkLevel']:checked").val() === 'small') {
                     $('#k2oResultSpan').text(bs[cornPriceIndex][kPriceIndex]);
                 }
-                else {
+                else if ($("input[name='bkLevel']:checked").val() === 'big') {
                     $('#k2oResultSpan').text(bb[cornPriceIndex][kPriceIndex]);
                 }
+            else
+                    $('#k2oResultSpan').text('0');
             }
         });
     }

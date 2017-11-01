@@ -1,0 +1,40 @@
+android: io.cordova.myappe89f04
+
+keytool -genkey -v -keystore C:\BuProjects\Corn-K-Calculator\Documents\CKC-release-key.keystore -alias HonggangBu -keyalg RSA -keysize 2048 -validity 10000
+
+
+psw:bugu7879
+
+ios id: ndsu.cornKCalculator
+
+
+Microsoft Windows [Version 10.0.14393]
+(c) 2016 Microsoft Corporation. All rights reserved.
+
+C:\WINDOWS\system32>cd C:\Program Files (x86)\Java\jdk1.7.0_55\bin
+
+C:\Program Files (x86)\Java\jdk1.7.0_55\bin>keytool -genkey -v -keystore C:\BuProjects\Corn-K-Calculator\Documents\CKC-release-key.keystore -alias HonggangBu -keyalg RSA -keysize 2048 -validity 10000
+Enter keystore password:
+Re-enter new password:
+What is your first and last name?
+  [Unknown]:  Honggang Bu
+What is the name of your organizational unit?
+  [Unknown]:  Department of Soil Science
+What is the name of your organization?
+  [Unknown]:  NDSU
+What is the name of your City or Locality?
+  [Unknown]:  Fargo
+What is the name of your State or Province?
+  [Unknown]:  ND
+What is the two-letter country code for this unit?
+  [Unknown]:  US
+Is CN=Honggang Bu, OU=Department of Soil Science, O=NDSU, L=Fargo, ST=ND, C=US correct?
+  [no]:  y
+
+Generating 2,048 bit RSA key pair and self-signed certificate (SHA256withRSA) with a validity of 10,000 days
+        for: CN=Honggang Bu, OU=Department of Soil Science, O=NDSU, L=Fargo, ST=ND, C=US
+Enter key password for <HonggangBu>
+        (RETURN if same as keystore password):
+[Storing C:\BuProjects\Corn-K-Calculator\Documents\CKC-release-key.keystore]
+
+C:\Program Files (x86)\Java\jdk1.7.0_55\bin>

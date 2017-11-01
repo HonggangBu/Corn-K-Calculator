@@ -3,25 +3,25 @@
 }
 
 body {
-    background-color:honeydew;
+    background-color: honeydew;
     font-size: 12px;
     height: 100%;
     margin: 0;
     padding: 0;
     width: 100%;
-    font-family:'HelveticaNeue-Light', 'RobotoRegular', 'Droid Sans', 'Segoe UI', Segoe, 'San Francisco', 'Helvetica Neue', Helvetica, Arial, Geneva, sans-serif;
+    font-family: 'HelveticaNeue-Light', 'RobotoRegular', 'Droid Sans', 'Segoe UI', Segoe, 'San Francisco', 'Helvetica Neue', Helvetica, Arial, Geneva, sans-serif;
 }
 
 footer {
     text-align: center;
     background-color: gainsboro !important;
     font-size: xx-small;
-    opacity:0.7;
+    opacity: 0.7;
 }
 
 .nav-tabs {
     text-align: center;
-    background-color:gold;
+    background-color: gold;
 }
 
     .nav-tabs > li {
@@ -74,7 +74,7 @@ hr {
     border: solid;
     border-color: darkgreen;
     height: 120px;
-    text-align:center;
+    text-align: center;
 }
 
 #intro p {
@@ -104,8 +104,8 @@ hr {
     font-weight: bold;
 }
 
-.labelSize{
-    font-size:medium;
+.labelSize {
+    font-size: medium;
 }
 
 .border-top {
@@ -114,20 +114,20 @@ hr {
     border-top-width: thick;
 }
 
-.content-center{
-    text-align:center;
+.content-center {
+    text-align: center;
 }
 
-#backtotop{
-    float:right; 
-    margin-bottom:70px; 
-    border:solid gray; 
-    font-size:14px; 
-    padding:5px;
+#backtotop {
+    float: right;
+    margin-bottom: 70px;
+    border: solid gray;
+    font-size: 14px;
+    padding: 5px;
 }
 
-#author{
-    text-align:center; 
-    background-color: tan; 
-    font-size:small;
+#author {
+    text-align: center;
+    background-color: tan;
+    font-size: small;
 }

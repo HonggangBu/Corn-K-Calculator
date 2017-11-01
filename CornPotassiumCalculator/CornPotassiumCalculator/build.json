@@ -1,11 +1,27 @@
 {
-     "android": {
-         "release": {
-             "keystore": "",
-             "storePassword": "",
-             "alias": "",
-             "password" : "",
-             "keystoreType": ""
-         }
-     }
- }
+  "android": {
+    "release": {
+      "keystore": "C:\\BuProjects\\Corn-K-Calculator\\Documents\\CKC-release-key.keystore",
+      "storePassword": "bugu7879",
+      "alias": "HonggangBu",
+      "password": "bugu7879",
+      "keystoreType": ""
+    }
+  },
+
+  "ios": {
+    "debug": {
+      "developmentTeam": "FM3AXHLL3T"
+    },
+
+    "release": {
+      "developmentTeam": "FM3AXHLL3T",
+      "codeSignIdentity": "iPhone Distribution",
+      "provisioningProfile": "10989c53-8b74-4373-8f75-031a1318c3f4",
+      "packageType": "app-store"
+    }
+  }
+}
+
+
+
