@@ -7,8 +7,6 @@ $(function () {
 
     OnAnySelectChangeClearResult();
 
-    OnCalculateBtnClick();
-
 });
 
 ////////////////////////////////////////////////////
@@ -61,50 +59,49 @@ sb = [[90, 90, 60, 60, 60, 0, 0, 0, 0, 0],
 function OnAnySelectChangeClearResult() {
     $('input[type=radio]').each(function () {
         $(this).on("change", function () {
-            $('#k2oResultSpan').text('');
+            //$('#k2oResultSpan').text('');
+            GetResult();
         });
     });
 
     $('select').each(function () {
         $(this).on("change", function () {
-            $('#k2oResultSpan').text('');
+            //$('#k2oResultSpan').text('');
+            GetResult();
         });
     });
 }
 
-// on "calculate" button click, calculate and display the result
-function OnCalculateBtnClick() {
-    $("#calcBtn").click(function () {
-        var cornPriceIndex = $('#cornPriceSelect').prop('selectedIndex'),
+// retrieve and display result
+function GetResult() {
+    var cornPriceIndex = $('#cornPriceSelect').prop('selectedIndex'),
             kPriceIndex = $('#kPriceSelect').prop('selectedIndex');
 
-        if ($("input[name='siRatio']:checked").val() === 'small') { // s/i ratio<3/5
-            if ($("input[name='skLevel']:checked").val() === 'small') {
-                $('#k2oResultSpan').text(ss[cornPriceIndex][kPriceIndex]);
-            }
-            else if ($("input[name='skLevel']:checked").val() === 'big') {
-                $('#k2oResultSpan').text(sb[cornPriceIndex][kPriceIndex]);
-            }
-            else {
-                $('#k2oResultSpan').text('0');
-            }
-                
+    if ($("input[name='siRatio']:checked").val() === 'small') { // s/i ratio<3/5
+        if ($("input[name='skLevel']:checked").val() === 'small') {
+            $('#k2oResultSpan').text(ss[cornPriceIndex][kPriceIndex]);
         }
-        else { // s/i ratio>=3/5
-            if ($("input[name='bkLevel']:checked").val() === 'small') {
-                $('#k2oResultSpan').text(bs[cornPriceIndex][kPriceIndex]);
-            }
-            else if ($("input[name='bkLevel']:checked").val() === 'big') {
-                $('#k2oResultSpan').text(bb[cornPriceIndex][kPriceIndex]);
-            }
-            else {
-                $('#k2oResultSpan').text('0');
-            }
-                
+        else if ($("input[name='skLevel']:checked").val() === 'big') {
+            $('#k2oResultSpan').text(sb[cornPriceIndex][kPriceIndex]);
         }
-    });
-}
+        else {
+            $('#k2oResultSpan').text('0');
+        }
 
+    }
+    else { // s/i ratio>=3/5
+        if ($("input[name='bkLevel']:checked").val() === 'small') {
+            $('#k2oResultSpan').text(bs[cornPriceIndex][kPriceIndex]);
+        }
+        else if ($("input[name='bkLevel']:checked").val() === 'big') {
+            $('#k2oResultSpan').text(bb[cornPriceIndex][kPriceIndex]);
+        }
+        else {
+            $('#k2oResultSpan').text('0');
+        }
+
+    }
+}
 
 // 
 function OnSiRatioChange() {

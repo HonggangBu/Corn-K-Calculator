@@ -4,7 +4,7 @@
     <ReferenceCachePath>C:\Users\honggang.bu\AppData\Local\Temp\CornPotassiumCalculator_refcache</ReferenceCachePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Android'">
-    <DebuggerFlavor>AndroidEmulator</DebuggerFlavor>
+    <DebuggerFlavor>RippleNexus</DebuggerFlavor>
     <AndroidEmulatorID>4B675905-D130-4929-91C8-FC62E9C03A24;VS Emulator 5.7" Marshmallow (6.0.0) XHDPI Phone</AndroidEmulatorID>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|iOS'">
