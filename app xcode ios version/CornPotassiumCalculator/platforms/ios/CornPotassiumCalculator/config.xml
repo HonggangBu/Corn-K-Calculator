@@ -1,0 +1,85 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget defaultlocale="en-US" id="ndsu.cornKCalculator" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0" xmlns:vs="http://schemas.microsoft.com/appx/2014/htmlapps">
+    <feature name="LocalStorage">
+        <param name="ios-package" value="CDVLocalStorage" />
+    </feature>
+    <feature name="Console">
+        <param name="ios-package" value="CDVLogger" />
+        <param name="onload" value="true" />
+    </feature>
+    <feature name="HandleOpenUrl">
+        <param name="ios-package" value="CDVHandleOpenURL" />
+        <param name="onload" value="true" />
+    </feature>
+    <feature name="IntentAndNavigationFilter">
+        <param name="ios-package" value="CDVIntentAndNavigationFilter" />
+        <param name="onload" value="true" />
+    </feature>
+    <feature name="GestureHandler">
+        <param name="ios-package" value="CDVGestureHandler" />
+        <param name="onload" value="true" />
+    </feature>
+    <feature name="SplashScreen">
+        <param name="ios-package" value="CDVSplashScreen" />
+        <param name="onload" value="true" />
+    </feature>
+    <name>CornPotassiumCalculator</name>
+    <description>Potassium availability to crops is much more complex than most people realize. Whereas the complexity of N crop nutrition is largely biologically-based, K nutrition involves a great deal of physical chemistry and a small amount of biology. This calculator is the culmination of three years of work by my excellent graduate students Manbir Rakkar, and John Breker, along with Honggang Bu (also the developer of this App), Lakesh Sharma (Research/Teaching/Extension at Univ. of Maine, Aroostook), Eric Schultz and Drs. Tom DeSutter and Amit Chatterjee at NDSU Soil Science.
+It became apparent in the two dry years of the K rate studies (2015 and 2016) that the previous critical soil test level of K (150 ppm) was not diagnostic to more than half of the sites that we worked with in Richland, Cass, Sargent, and Barnes counties. Digging deeper into K availability science, the role of clay chemistry and the presence of potassium feldspar in the mineral soil fractions were possible sources of some low testing sites with no yield increase with K, and higher testing sites providing substantial yield benefit due to K. As a result of these literature reviews and attending a K symposium at the American Society of Agronomy meetings in 2015, with the key note speaker noted K researcher Don Sparks from Univ. of Delaware, I sent off samples to ACT Laboratories, Ltd in Ontario, Canada for complete clay speciation and determination of potassium feldspar. In 2017, due to a sample from my PhD graduate student Chris Augustin (also Extension Soil Health specialist at the North Central R&amp;E Center) that came back with more illite clay content than anything I had previously seen in SE North Dakota, I conducted several state-wide expeditions to gather georeferenced surface soil samples from two to three major soil groups in every state in North Dakota. These were also sent to ACT labs for analysis. The resulting values of percent Smectite and percent Illite were mapped as the smectite/illite ratio either greater than or less than 3.5, which I found was the ratio value that best described the corn yield responses in our study. 
+The recommendations in the app also begin with 60 lb/acre of K2O, which is 100 lb/acre of 0-0-60 dry granule fertilizer. Applications below this rate were not effective in any economic return to K, thus a lower rate is never recommended. This may be due to granule distribution among individual corn plants. It is possible that liquid K solutions may be more effective at lower rates, but we did not test it. Keep in mind that the uptake of K by corn through the season is similar to that of N, which at today’s yields is greater than 200 lb plant food per acre, so really low rates would not expect to have much effect. We also found that rates greater than 200 lb/acre of 0-0-60 (120 lb/acre K2O) decreased yield from the peak yield found at the 200 lb/acre rate, so the K rate in the calculator is 120 lb/acre K2O, or 200 lb/acre 0-0-60. Although I do not recommend a buildup program for K due to our iffy environment, if a grower chooses to build soil levels, fertilizing other crops in the rotation while respecting the 200 lb/acre 0-0-60 limit would be the best option.
+Keep in mind that sandy soils low in organic matter (for example an Arvilla sandy loam, organic matter content 2%) cannot be built to soil test levels above 100 ppm, so in those soils, buildup programs are useless. Buildup K to our new critical levels of 150 ppm or 200 ppm would be possible in loam textured soils with 3% organic matter and above, to soils with greater clay or organic matter (provided the clays are illites and smectites-there is considerable kaolinite in some soils in SW North Dakota, so a real CEC test- not the CEC by addition, would help a grower to determine if the soil test could be built. A real CEC greater than 10 milliequivalents per 100 grams of soil would provide a foundation for effective K buildup. 
+</description>
+    <author email="honggang.bu@ndsu.edu" href="">Honggang Bu</author>
+    <content src="index.html" />
+    <access origin="*" />
+    <vs:features />
+    <allow-intent href="http://*/*" />
+    <allow-intent href="https://*/*" />
+    <allow-intent href="tel:*" />
+    <allow-intent href="sms:*" />
+    <allow-intent href="mailto:*" />
+    <allow-intent href="geo:*" />
+    <hook src="hooks/xcode8.js" type="before_compile" />
+    <allow-intent href="itms:*" />
+    <allow-intent href="itms-apps:*" />
+    <icon height="180" src="res/icons/ios/icon-60-3x.png" width="180" />
+    <icon height="60" src="res/icons/ios/icon-60.png" width="60" />
+    <icon height="120" src="res/icons/ios/icon-60-2x.png" width="120" />
+    <icon height="76" src="res/icons/ios/icon-76.png" width="76" />
+    <icon height="152" src="res/icons/ios/icon-76-2x.png" width="152" />
+    <icon height="40" src="res/icons/ios/icon-40.png" width="40" />
+    <icon height="80" src="res/icons/ios/icon-40-2x.png" width="80" />
+    <icon height="57" src="res/icons/ios/icon-57.png" width="57" />
+    <icon height="114" src="res/icons/ios/icon-57-2x.png" width="114" />
+    <icon height="72" src="res/icons/ios/icon-72.png" width="72" />
+    <icon height="144" src="res/icons/ios/icon-72-2x.png" width="144" />
+    <icon height="29" src="res/icons/ios/icon-small.png" width="29" />
+    <icon height="58" src="res/icons/ios/icon-small-2x.png" width="58" />
+    <icon height="50" src="res/icons/ios/icon-50.png" width="50" />
+    <icon height="100" src="res/icons/ios/icon-50-2x.png" width="100" />
+    <splash height="480" src="res/screens/ios/screen-iphone-portrait.png" width="320" />
+    <splash height="960" src="res/screens/ios/screen-iphone-portrait-2x.png" width="640" />
+    <splash height="1024" src="res/screens/ios/screen-ipad-portrait.png" width="768" />
+    <splash height="2048" src="res/screens/ios/screen-ipad-portrait-2x.png" width="1536" />
+    <splash height="768" src="res/screens/ios/screen-ipad-landscape.png" width="1024" />
+    <splash height="1536" src="res/screens/ios/screen-ipad-landscape-2x.png" width="2048" />
+    <splash height="1136" src="res/screens/ios/screen-iphone-568h-2x.png" width="640" />
+    <splash height="1334" src="res/screens/ios/screen-iphone-portrait-667h.png" width="750" />
+    <splash height="2208" src="res/screens/ios/screen-iphone-portrait-736h.png" width="1242" />
+    <splash height="1242" src="res/screens/ios/screen-iphone-landscape-736h.png" width="2208" />
+    <preference name="AllowInlineMediaPlayback" value="false" />
+    <preference name="BackupWebStorage" value="cloud" />
+    <preference name="DisallowOverscroll" value="false" />
+    <preference name="EnableViewportScale" value="false" />
+    <preference name="KeyboardDisplayRequiresUserAction" value="true" />
+    <preference name="MediaPlaybackRequiresUserAction" value="false" />
+    <preference name="SuppressesIncrementalRendering" value="false" />
+    <preference name="SuppressesLongPressGesture" value="false" />
+    <preference name="Suppresses3DTouchGesture" value="false" />
+    <preference name="GapBetweenPages" value="0" />
+    <preference name="PageLength" value="0" />
+    <preference name="PaginationBreakingMode" value="page" />
+    <preference name="PaginationMode" value="unpaginated" />
+    <preference name="SplashScreen" value="screen" />
+    <preference name="deployment-target" value="10.2" />
+</widget>

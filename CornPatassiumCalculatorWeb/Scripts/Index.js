@@ -59,14 +59,12 @@ sb = [[90, 90, 60, 60, 60, 0, 0, 0, 0, 0],
 function OnAnySelectChangeClearResult() {
     $('input[type=radio]').each(function () {
         $(this).on("change", function () {
-            //$('#k2oResultSpan').text('');
             GetResult();
         });
     });
 
     $('select').each(function () {
         $(this).on("change", function () {
-            //$('#k2oResultSpan').text('');
             GetResult();
         });
     });

@@ -1,15 +1,11 @@
 ﻿body {
     background-color:honeydew;
-    font-family: 'HelveticaNeue-Light', 'HelveticaNeue', Helvetica, Arial, sans-serif, 'RobotoRegular', 'Droid Sans', 'Segoe UI', Segoe, 'San Francisco', ;
+    font-family: HelveticaNeue-Light, HelveticaNeue, Helvetica, Arial, sans-serif, RobotoRegular, Droid Sans, Segoe UI, Segoe, San Francisco;
     font-size: 12px;
     height: 100%;
     margin: 0;
     padding: 0;
     width: 100%;
-}
-
-.container{
-    text-align: center;
 }
 
 footer {
@@ -60,7 +56,7 @@ li{
     text-align:justify;
 }
 
-.jumbotron, #aboutDiv h3, #CalculatorDiv{
+.container, .jumbotron, #aboutDiv h3, #CalculatorDiv{
     text-align:center;
 }
 

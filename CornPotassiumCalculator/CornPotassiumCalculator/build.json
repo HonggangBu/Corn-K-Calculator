@@ -15,9 +15,10 @@
     },
 
     "release": {
-      "developmentTeam": "FM3AXHLL3T",
+      // "codeSignIdentity": "iPhone Developer",
       "codeSignIdentity": "iPhone Distribution",
-      "provisioningProfile": "10989c53-8b74-4373-8f75-031a1318c3f4",
+      "developmentTeam": "FM3AXHLL3T",
+      "provisioningProfile": "409121a5-8168-4017-9d4a-37b43464ff38",
       "packageType": "app-store"
     }
   }
